@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: deps_dev_v1
+    description: 'I am trying to use this table to learn different techniques'
+    database: bigquery-public-data
+    schema: deps_dev_v1
+    tables:
+      - name: Advisories
+      - name: Dependents
+      - name: Projects
+

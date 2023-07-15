@@ -34,4 +34,7 @@ models:
   dbt_bigquery_practice:
     # Config indicated by + and applies to all files under models/example/
     example:
-      +materialized: view
+      +materialized: table
+    bigquery_sample_data:
+      +materialized: table
+      +schema: staging
