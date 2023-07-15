@@ -6,7 +6,15 @@ sources:
     database: bigquery-public-data
     schema: deps_dev_v1
     tables:
-      - name: Advisories    
+      - name: Advisories   
       - name: Dependents
       - name: Projects
 
+models:
+  - name: deps_dev__advisories
+   
+    columns:
+     - name: Title
+       tests: 
+        - does_title_include_null
+              
