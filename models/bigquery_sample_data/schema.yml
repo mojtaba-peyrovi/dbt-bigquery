@@ -6,7 +6,7 @@ sources:
     database: bigquery-public-data
     schema: deps_dev_v1
     tables:
-      - name: Advisories
+      - name: Advisories    
       - name: Dependents
       - name: Projects
 

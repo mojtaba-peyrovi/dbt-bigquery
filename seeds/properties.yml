@@ -1,0 +1,7 @@
+# # version: 2
+
+# seeds:
+#   - name: Snapshots
+#     config:
+#       column_types:
+#         Time: DATE

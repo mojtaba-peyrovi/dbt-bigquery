@@ -38,3 +38,11 @@ models:
     bigquery_sample_data:
       +materialized: table
       +schema: staging
+      
+# seeds:
+#    dbt_bigquery_practice:
+#        Snapshots: 
+#           +column_types:
+#               Time: TIMESTAMP
+              
+      
