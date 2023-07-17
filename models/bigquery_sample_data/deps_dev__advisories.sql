@@ -3,7 +3,9 @@ with advisories as (
 ),
 
 final as (
-    select * from advisories
+    select *,
+    advisories.Source = '{{ var("advisory_source") }}' as is_from_osv
+    from advisories
 )
 
 

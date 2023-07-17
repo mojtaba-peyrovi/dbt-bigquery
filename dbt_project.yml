@@ -6,6 +6,9 @@ name: 'dbt_bigquery_practice'
 version: '1.0.0'
 config-version: 2
 
+vars:
+    advisory_source: 'OSV'
+
 # This setting configures which "profile" dbt uses for this project.
 profile: 'personal_dbt'
 
