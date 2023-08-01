@@ -16,5 +16,5 @@ models:
     columns:
      - name: Title
        tests: 
-        - does_title_include_null
+        - does_title_include_unknown
               

@@ -1,9 +1,11 @@
 with advisories as (
-    select * from {{source('deps_dev_v1', 'Advisories')}} limit 5
+    select * from {{source('deps_dev_v1', 'Advisories')}} limit 50
 ),
 
 final as (
-    select * from advisories
+    select *,
+    advisories.Source = '{{ var("advisory_source") }}' as is_from_osv
+    from advisories
 )
 
 
